@@ -61,7 +61,7 @@ function App() {
     <>
       <ul>
         {InitialStars.map(x =>
-          <li key={x.id}><button onClick={() => handleClick(x.id)}>{x.star}</button></li>
+          <li key={x.id}><div onClick={() => handleClick(x.id)}>{x.star}</div></li>
         )}
       </ul>
       <button onClick={() => handleReset()}>Reset</button>
